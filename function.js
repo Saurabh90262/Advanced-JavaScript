@@ -20,4 +20,4 @@ console.log(result) //gives undefined
 let res = (n1,n2) => {
     console.log(n1+n2)
 }
-res(5,5)
+res(5,4)
