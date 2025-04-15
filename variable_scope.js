@@ -21,7 +21,7 @@
 // console.log("Outside the function",z);
 // console.log("Not available here:",y);
 
-//acess the variable before declaration
+// acess the variable before declaration
 // function doing(){
 //     if(true) {
 //         console.log(x);
@@ -76,7 +76,7 @@
 // console.log("after block scope :",x);
 
 
-//mislaneous annonymous function
+// mislaneous annonymous function
 // immideatly invoke function 
 // (function(){
 //     console.log("Hello");
@@ -98,3 +98,69 @@
 //     console.log("end",x);
 // }
 // logRecursion(5);
+// hello
+// function get_recursion(nr){
+//     if(nr>0){
+//         get_recursion(--nr);
+//     }
+//     console.log(nr);
+// }
+// get_recursion(3);
+
+// function get_recursion(nr){
+//     console.log("Started function :",nr);
+//     if(nr>0){
+//         get_recursion(nr-1);
+//     }else{
+//         console.log("Recusrion executed...!");
+//     }
+//     console.log("Ended function :",nr);
+// }
+// get_recursion(3);
+
+// performance of recursion is slightly lower than loops;
+
+// ###### Nested function -> function indide another function #########
+
+// function outer(nr){
+//     console.log("Outer Function :");
+//     function inner(x){
+//         console.log(x+7);
+//         console.log("Outer functions are acessible :");
+//     }
+
+// }
+// outer(3);
+// inner(3);
+
+// Annonymous functions
+// Functions Callback
+//  let functionVariable = function(){
+//     console.log("Function Variable :");
+//  };
+
+//  function dofun(executes){
+//     executes();
+//     console.log("Inside do :")
+//  }
+//  dofun(functionVariable);
+
+// let gotThis = function(){
+//     console.log("Function called after 1 sec ....! ");
+// };
+// // setTimeout(gotThis,5000);
+// setInterval(gotThis,4000);
+
+(function () {
+    console.log("Welcome")
+})();
+(function () {
+    console.log("Sashi")
+})();
+let result = (function () {
+    console.log("Welcome")
+})();
+console.log(result);
+(function (first) {
+    console.log("My Name is "+first);
+})();
